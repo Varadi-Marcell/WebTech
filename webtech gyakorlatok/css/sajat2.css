@@ -1,0 +1,110 @@
+body{
+	background-color: aquamarine;	
+}
+
+h1 {
+    color:red;
+    border: Violet 2px dashed;
+}
+#elso {
+    margin-left: 50%;
+    padding: 5% 5% 5% 50%;
+    width: 20%;
+}
+
+div p{
+	color: red;	
+}
+
+div > p{
+	background-color: darkmagenta;
+}
+
+div + p{
+	font-style: italic;	
+}
+
+div ~ p{
+	font-weight: bold;
+}
+
+p:hover {
+	font-size: large;
+}
+
+input:required{
+	background-color: yellow;
+}
+
+input:invalid{
+	color:red;
+}
+
+input:in-range{
+	color: green;	
+}
+
+input:valid{
+	color:blue;	
+}
+
+a:link{
+	background-color: yellow;
+}
+
+a:visited{
+	background-color: green;	
+}
+
+a:hover{
+	background-color: darkmagenta;	
+}
+
+a:active{
+	background-color: brown;	
+}
+
+a.feher:hover{
+	color: white;	
+}
+
+input:checked{
+	font-weight: bold;	
+}
+
+input:focus{
+	font-style: italic;	
+}
+
+div > p:first-child::before{
+	content: "SziaMia";
+}
+
+#szoveg::first-line {
+	color: blue;
+}
+
+#szoveg::first-letter{
+	font-size: xxx-large;
+	font-family: Vivaldi;
+}
+
+::marker {
+	color: blue;	
+}
+
+
+::selection{
+	background-color: green;
+	color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
