@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectorok Advanced</title>
+    <script src="https://kit.fontawesome.com/e53c207895.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sajat.css"/>
+
+</head>
+<body>
+	<p>
+			îtîdik pÇlda 
+	</p>
+	<p>
+			elsã
+	</p>
+	<div>
+		<p>	m†sodik </p>				
+		<p>harmadik</p>
+		<div> 
+		<p>negyedik</p>		
+		</div>
+		<p>îtîdik</p>
+	</div>
+	<p>
+		hatodik 
+	</p>
+	<p>
+			hetedik
+	</p>
+<form action="/feldolgoz" target="_blank" method="get" id="form1">
+    <fieldset>
+        <legend>Alap adatok:</legend>
+    <label for="vezeteknev">VezetÇknÇv</label>
+    <input id="vezeteknev" type="text" name="vezeteknev"/><br>
+        <label for="keresztnev">KeresztnÇv</label>
+        <input type="text" name="keresztnev" id="keresztnev"><br>
+        <label for="jelszo">Jelszo</label>
+        <input type="password" name="jelszo" id="jelszo"><br>
+        <input type="submit" value="ElkÅldÇs">
+        <label for="html">HTML</label>
+        <input id="html" name="kedvenc" type="radio" value="HTML"><br>
+        <label for="css">CSS</label>
+        <input type="radio" name="kedvenc" id="css" value="CSS"><br>
+        <label for="javascript">JavaScript</label>
+        <input id="javascript" name="kedvenc" type="radio" value="JavaScript"><br>
+
+        <label for="orul">ôrÅl?</label>
+        <input type="checkbox" id="orul" name="orul" value="Igen" checked><br>
+        <label for="szin"></label><input type="color" id="szin" name="szin" value="#fe1258"><br>
+        <label for="szuletesi_datum">SzÅletÇsi d†tum:</label>
+        <input type="date" name="szuletesi_datum" id="szuletesi_datum" max="2021-09-27" min="2021-09-18" ><br>
+        <label for="meeting">Mikor legyen a meeting?</label>
+        <input type="datetime-local" id="meeting" name="meeting" max="2021-10-05T00:00" min="2021-09-28T00:00" ><br>
+        <label for="email"></label><input type="email" name="email" id="email"><br>
+        <label for="file">Feltîltendã †llom†ny</label>
+        <input type="file" name="file" id="file" ><br>
+        <label for="felev">FÇlÇv kezdete</label>
+        <input type="month" name="felev" id="felev"><br>
+        <label for="kor">Kor</label>
+        <input type="number" id="kor" name="kor" min="0" max="130" maxlength="3" step="1"><br>
+        <label>êrtÇkelÇs</label>
+        <input type="range" id="ertekeles" name="ertekeles" min="1" max="10" step="0.5"><br>
+        <label for="ora">‡ra kezdete</label><input type="time" id="ora" name="ora"><br>
+
+        <label for="iranyitoszam">Ir†ny°t¢sz†m</label><input  required placeholder="2222" type="text" id="iranyitoszam" name="iranyitoszam" pattern="[1-9][0-9]{3}"><br>
+
+
+
+        <button type="submit">KÅldÇs</button>
+
+    <select id="nem" name="nem" multiple size="1">
+        <option value="ferfi">FÇrfi</option>
+        <option value="no">Nã</option>
+        <option value="egyeb" selected>EgyÇb</option>
+    </select>
+    </fieldset>
+    <input list="nem2" name="nem2">
+    <datalist id="nem2">
+        <option value="ferfi"></option>
+        <option value="no"></option>
+    </datalist>
+    <textarea name="uzenet" rows="10" cols="30">
+    </textarea>
+
+</form>
+
+	<img src="cica.jpeg">
+	<a href="https://google.com">Google</a>
+	<a href="https://index.hu">Index</a>
+	
+	<a class="feher" href="https://index.hu">Index</a>
+	
+	
+	<p id="szoveg">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam arcu tortor, finibus ut nulla eu, tincidunt condimentum risus. Sed ut nulla volutpat,
+		placerat arcu quis, tristique tellus. Maecenas id euismod risus. Sed luctus nunc lobortis venenatis dignissim. Sed egestas dignissim augue,
+		sed feugiat nibh vestibulum nec. Donec quis tellus a ante faucibus 
+		imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus non sem et tortor iaculis
+		hendrerit. Integer blandit commodo eros id lacinia. Integer sit amet porttitor lacus. Ut quis quam consequat, lobortis nunc sed, tincidunt lectus. Fusce venenatis purus magna, in euismod ligula auctor non. Nulla posuere efficitur libero id molestie.
+		Donec quis leo ac lacus fermentum efficitur. Nunc non libero ut magna tempus rhoncus id a justo. Quisque pharetra elementum leo eu mollis.
+	</p>
+	
+	<ol type=A>
+		<li>Hello</li>
+	</ol>
+	
+	[target]
+	[attribute="value"] input[type="date"]
+	[attribute~="value"] input[type~="at"]
+	[attribute|="value"] input[type="date"] date Çs date-en, de a datetime nem
+	[attribute^="value"] input[type^="date"] date, date-en, datetime
+	[attribute$="value"] a[href$=".pdf"]
+	[attribute*="value"] a[href*=".com"]
+	
+	
+</body>
+</html>
+
+
